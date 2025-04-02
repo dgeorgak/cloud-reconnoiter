@@ -7,12 +7,6 @@ domain=""
 RED="\033[1;31m"
 RESET="\033[0m"
 
-# Check if domain is provided
-# if [[ -z "$domain" ]]; then
-#     echo "Usage: $0 [targetDomain] [--no-update]"
-#     exit 1
-# fi
-
 # Parse command line arguments and create output directory
 for arg in "$@"; do
     if [[ "$arg" == "--no-update" ]]; then
